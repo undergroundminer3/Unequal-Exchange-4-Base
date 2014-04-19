@@ -10,6 +10,7 @@ import cpw.mods.fml.common.event.FMLInterModComms.IMCEvent;
 import cpw.mods.fml.common.network.NetworkRegistry;
 import me.undergroundminer3.uee4.block.ModBlocks;
 import me.undergroundminer3.uee4.config.Config;
+import me.undergroundminer3.uee4.emc.EmcDataRegistry;
 import me.undergroundminer3.uee4.handler.CraftingHandler;
 import me.undergroundminer3.uee4.handler.GuiHandler;
 import me.undergroundminer3.uee4.item.ModItems;
@@ -37,6 +38,7 @@ public class UnequalExchange4
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event)
 	{
+		EmcDataRegistry.init();
 		Config.load(event.getModConfigurationDirectory());
 		
 		// Initialize mod items
