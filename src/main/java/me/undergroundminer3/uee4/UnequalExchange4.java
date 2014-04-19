@@ -9,12 +9,14 @@ import cpw.mods.fml.common.event.*;
 import cpw.mods.fml.common.event.FMLInterModComms.IMCEvent;
 import cpw.mods.fml.common.network.NetworkRegistry;
 import me.undergroundminer3.uee4.block.ModBlocks;
+import me.undergroundminer3.uee4.config.Config;
 import me.undergroundminer3.uee4.handler.CraftingHandler;
 import me.undergroundminer3.uee4.handler.GuiHandler;
 import me.undergroundminer3.uee4.item.ModItems;
 import me.undergroundminer3.uee4.proxy.IProxy;
 import me.undergroundminer3.uee4.reference.EventHandlers;
 import me.undergroundminer3.uee4.reference.Reference;
+import me.undergroundminer3.uee4.util.CheatDetector;
 import net.minecraftforge.common.MinecraftForge;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = "0.01")
@@ -27,20 +29,16 @@ public class UnequalExchange4
 	public static IProxy proxy;
 
 	@EventHandler
-	public void invalidFingerprint(FMLFingerprintViolationEvent event)
-	{
-
-	}
-
-	@EventHandler
 	public void serverStarting(FMLServerStartingEvent event)
 	{
-
+		CheatDetector.detectCheats(false);
 	}
 
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event)
 	{
+		Config.load(event.getModConfigurationDirectory());
+		
 		// Initialize mod items
 		ModItems.init();
 
@@ -51,6 +49,8 @@ public class UnequalExchange4
 	@EventHandler
 	public void init(FMLInitializationEvent event)
 	{
+		CheatDetector.detectCheats(false);
+		
 		// Register the GUI Handler
 		NetworkRegistry.INSTANCE.registerGuiHandler(instance, new GuiHandler());
 
@@ -70,12 +70,6 @@ public class UnequalExchange4
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent event)
 	{
-
-	}
-
-	@EventHandler
-	public void handleIMCMessages(IMCEvent event)
-	{
-
+		CheatDetector.detectCheats(true);
 	}
 }

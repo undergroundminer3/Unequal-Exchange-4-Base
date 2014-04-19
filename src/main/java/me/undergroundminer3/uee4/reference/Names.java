@@ -55,11 +55,11 @@ public class Names
 	{
 		public static final String VANILLA_INVENTORY = "container.inventory";
 		public static final String VANILLA_CRAFTING = "container.crafting";
-		public static final String ALCHEMICAL_BAG = "container.ee3:" + Items.ALCHEMICAL_BAG;
-		public static final String ALCHEMICAL_CHEST = "container.ee3:" + Blocks.ALCHEMICAL_CHEST;
-		public static final String CALCINATOR_NAME = "container.ee3:" + Blocks.CALCINATOR;
-		public static final String ALUDEL_NAME = "container.ee3:" + Blocks.ALUDEL;
+		public static final String ALCHEMICAL_BAG = "container.uee4:" + Items.ALCHEMICAL_BAG;
+		public static final String ALCHEMICAL_CHEST = "container.uee4:" + Blocks.ALCHEMICAL_CHEST;
+		public static final String CALCINATOR_NAME = "container.uee4:" + Blocks.CALCINATOR;
+		public static final String ALUDEL_NAME = "container.uee4:" + Blocks.ALUDEL;
 
-		public static final String GLASS_BELL = "container.ee3:" + Blocks.GLASS_BELL;
+		public static final String GLASS_BELL = "container.uee4:" + Blocks.GLASS_BELL;
 	}
 }
