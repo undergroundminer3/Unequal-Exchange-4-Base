@@ -7,8 +7,8 @@ import net.minecraft.item.ItemMultiTexture;
 
 public class ItemBlockAlchemicalFuel extends ItemMultiTexture
 {
-    public ItemBlockAlchemicalFuel(Block block)
-    {
-        super(ModBlocks.alchemicalFuel, ModBlocks.alchemicalFuel, Names.Items.ALCHEMICAL_FUEL_SUBTYPES);
-    }
+	public ItemBlockAlchemicalFuel(Block block)
+	{
+		super(ModBlocks.alchemicalFuel, ModBlocks.alchemicalFuel, Names.Items.ALCHEMICAL_FUEL_SUBTYPES);
+	}
 }

@@ -7,15 +7,15 @@ import net.minecraft.item.crafting.CraftingManager;
 
 public class CraftingHandler
 {
-    public static void init()
-    {
-        // Add in the ability to dye Alchemical Bags
-        CraftingManager.getInstance().getRecipeList().add(new RecipesAlchemicalBagDyes());
-    }
+	public static void init()
+	{
+		// Add in the ability to dye Alchemical Bags
+		CraftingManager.getInstance().getRecipeList().add(new RecipesAlchemicalBagDyes());
+	}
 
-    @SubscribeEvent
-    public void onItemCraftedEvent(PlayerEvent.ItemCraftedEvent event)
-    {
-        // TODO Set owner on who crafted the item (make sure it's not a FakePlayer)
-    }
+	@SubscribeEvent
+	public void onItemCraftedEvent(PlayerEvent.ItemCraftedEvent event)
+	{
+		// TODO Set owner on who crafted the item (make sure it's not a FakePlayer)
+	}
 }

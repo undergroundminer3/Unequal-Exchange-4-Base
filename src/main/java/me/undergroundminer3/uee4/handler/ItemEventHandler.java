@@ -10,30 +10,30 @@ import net.minecraftforge.event.entity.player.PlayerDropsEvent;
 
 public class ItemEventHandler
 {
-    @SubscribeEvent
-    public void onItemTossEvent(ItemTossEvent itemTossEvent)
-    {
-        NBTHelper.clearStatefulNBTTags(itemTossEvent.entityItem.getEntityItem());
-    }
+	@SubscribeEvent
+	public void onItemTossEvent(ItemTossEvent itemTossEvent)
+	{
+		NBTHelper.clearStatefulNBTTags(itemTossEvent.entityItem.getEntityItem());
+	}
 
-    @SubscribeEvent
-    public void onItemPickupEvent(PlayerEvent.ItemPickupEvent itemPickupEvent)
-    {
-        NBTHelper.clearStatefulNBTTags(itemPickupEvent.pickedUp.getEntityItem());
-    }
+	@SubscribeEvent
+	public void onItemPickupEvent(PlayerEvent.ItemPickupEvent itemPickupEvent)
+	{
+		NBTHelper.clearStatefulNBTTags(itemPickupEvent.pickedUp.getEntityItem());
+	}
 
-    @SubscribeEvent
-    public void onEntityItemPickupEvent(EntityItemPickupEvent entityItemPickupEvent)
-    {
-        NBTHelper.clearStatefulNBTTags(entityItemPickupEvent.item.getEntityItem());
-    }
+	@SubscribeEvent
+	public void onEntityItemPickupEvent(EntityItemPickupEvent entityItemPickupEvent)
+	{
+		NBTHelper.clearStatefulNBTTags(entityItemPickupEvent.item.getEntityItem());
+	}
 
-    @SubscribeEvent
-    public void onPlayerDropsEvent(PlayerDropsEvent playerDropsEvent)
-    {
-        for (EntityItem entityItem : playerDropsEvent.drops)
-        {
-            NBTHelper.clearStatefulNBTTags(entityItem.getEntityItem());
-        }
-    }
+	@SubscribeEvent
+	public void onPlayerDropsEvent(PlayerDropsEvent playerDropsEvent)
+	{
+		for (EntityItem entityItem : playerDropsEvent.drops)
+		{
+			NBTHelper.clearStatefulNBTTags(entityItem.getEntityItem());
+		}
+	}
 }

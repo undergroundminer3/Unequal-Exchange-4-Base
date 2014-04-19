@@ -9,23 +9,23 @@ import java.util.Random;
 
 public class BlockChalk extends BlockEE
 {
-    public BlockChalk()
-    {
-        super(Material.clay);
-        this.setBlockName(Names.Items.CHALK);
-        this.setHardness(0.6f);
-        this.setStepSound(soundTypeStone);
-    }
+	public BlockChalk()
+	{
+		super(Material.clay);
+		this.setBlockName(Names.Items.CHALK);
+		this.setHardness(0.6f);
+		this.setStepSound(soundTypeStone);
+	}
 
-    @Override
-    public Item getItemDropped(int par1, Random random, int par2)
-    {
-        return ModItems.chalk;
-    }
+	@Override
+	public Item getItemDropped(int par1, Random random, int par2)
+	{
+		return ModItems.chalk;
+	}
 
-    @Override
-    public int quantityDropped(Random random)
-    {
-        return (random.nextInt(4) + 1);
-    }
+	@Override
+	public int quantityDropped(Random random)
+	{
+		return (random.nextInt(4) + 1);
+	}
 }

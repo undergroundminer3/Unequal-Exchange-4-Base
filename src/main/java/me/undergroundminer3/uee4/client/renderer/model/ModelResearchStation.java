@@ -9,15 +9,15 @@ import net.minecraftforge.client.model.IModelCustom;
 @SideOnly(Side.CLIENT)
 public class ModelResearchStation
 {
-    private IModelCustom modelResearchStation;
+	private IModelCustom modelResearchStation;
 
-    public ModelResearchStation()
-    {
-        modelResearchStation = AdvancedModelLoader.loadModel(Models.RESEARCH_STATION);
-    }
+	public ModelResearchStation()
+	{
+		modelResearchStation = AdvancedModelLoader.loadModel(Models.RESEARCH_STATION);
+	}
 
-    public void render()
-    {
-        modelResearchStation.renderAll();
-    }
+	public void render()
+	{
+		modelResearchStation.renderAll();
+	}
 }

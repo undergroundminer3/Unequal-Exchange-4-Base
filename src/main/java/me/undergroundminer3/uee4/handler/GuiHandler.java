@@ -10,27 +10,27 @@ import net.minecraft.world.World;
 
 public class GuiHandler implements IGuiHandler
 {
-    @Override
-    public Object getServerGuiElement(int id, EntityPlayer player, World world, int x, int y, int z)
-    {
-        if (id == GuiIds.ALCHEMICAL_CHEST)
-        {
-            TileAlchemicalChest tileAlchemicalChest = (TileAlchemicalChest) world.getTileEntity(x, y, z);
-            return new ContainerAlchemicalChest(player.inventory, tileAlchemicalChest);
-        }
+	@Override
+	public Object getServerGuiElement(int id, EntityPlayer player, World world, int x, int y, int z)
+	{
+		if (id == GuiIds.ALCHEMICAL_CHEST)
+		{
+			TileAlchemicalChest tileAlchemicalChest = (TileAlchemicalChest) world.getTileEntity(x, y, z);
+			return new ContainerAlchemicalChest(player.inventory, tileAlchemicalChest);
+		}
 
-        return null;
-    }
+		return null;
+	}
 
-    @Override
-    public Object getClientGuiElement(int id, EntityPlayer player, World world, int x, int y, int z)
-    {
-        if (id == GuiIds.ALCHEMICAL_CHEST)
-        {
-            TileAlchemicalChest tileAlchemicalChest = (TileAlchemicalChest) world.getTileEntity(x, y, z);
-            return new GuiAlchemicalChest(player.inventory, tileAlchemicalChest);
-        }
+	@Override
+	public Object getClientGuiElement(int id, EntityPlayer player, World world, int x, int y, int z)
+	{
+		if (id == GuiIds.ALCHEMICAL_CHEST)
+		{
+			TileAlchemicalChest tileAlchemicalChest = (TileAlchemicalChest) world.getTileEntity(x, y, z);
+			return new GuiAlchemicalChest(player.inventory, tileAlchemicalChest);
+		}
 
-        return null;
-    }
+		return null;
+	}
 }

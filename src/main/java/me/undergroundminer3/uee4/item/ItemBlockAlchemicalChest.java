@@ -11,35 +11,35 @@ import java.util.List;
 
 public class ItemBlockAlchemicalChest extends ItemBlock
 {
-    public ItemBlockAlchemicalChest(Block block)
-    {
-        super(block);
-        this.setHasSubtypes(true);
-    }
+	public ItemBlockAlchemicalChest(Block block)
+	{
+		super(block);
+		this.setHasSubtypes(true);
+	}
 
-    @Override
-    public int getMetadata(int meta)
-    {
-        return meta;
-    }
+	@Override
+	public int getMetadata(int meta)
+	{
+		return meta;
+	}
 
-    @SideOnly(Side.CLIENT)
-    public void addInformation(ItemStack itemStack, EntityPlayer entityPlayer, List list, boolean flag)
-    {
-        // TODO Localize and add more descriptive text
-        int metaData = itemStack.getItemDamage();
+	@SideOnly(Side.CLIENT)
+	public void addInformation(ItemStack itemStack, EntityPlayer entityPlayer, List list, boolean flag)
+	{
+		// TODO Localize and add more descriptive text
+		int metaData = itemStack.getItemDamage();
 
-        if (metaData == 0)
-        {
-            list.add("Small");
-        }
-        else if (metaData == 1)
-        {
-            list.add("Medium");
-        }
-        else if (metaData == 2)
-        {
-            list.add("Large");
-        }
-    }
+		if (metaData == 0)
+		{
+			list.add("Small");
+		}
+		else if (metaData == 1)
+		{
+			list.add("Medium");
+		}
+		else if (metaData == 2)
+		{
+			list.add("Large");
+		}
+	}
 }

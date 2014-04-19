@@ -9,15 +9,15 @@ import net.minecraftforge.client.model.IModelCustom;
 @SideOnly(Side.CLIENT)
 public class ModelGlassBell
 {
-    private IModelCustom modelGlassBell;
+	private IModelCustom modelGlassBell;
 
-    public ModelGlassBell()
-    {
-        modelGlassBell = AdvancedModelLoader.loadModel(Models.GLASS_BELL);
-    }
+	public ModelGlassBell()
+	{
+		modelGlassBell = AdvancedModelLoader.loadModel(Models.GLASS_BELL);
+	}
 
-    public void render()
-    {
-        modelGlassBell.renderPart("Bell");
-    }
+	public void render()
+	{
+		modelGlassBell.renderPart("Bell");
+	}
 }

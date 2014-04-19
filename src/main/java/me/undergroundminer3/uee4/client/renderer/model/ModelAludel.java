@@ -9,15 +9,15 @@ import net.minecraftforge.client.model.IModelCustom;
 @SideOnly(Side.CLIENT)
 public class ModelAludel
 {
-    private IModelCustom modelAludel;
+	private IModelCustom modelAludel;
 
-    public ModelAludel()
-    {
-        modelAludel = AdvancedModelLoader.loadModel(Models.ALUDEL);
-    }
+	public ModelAludel()
+	{
+		modelAludel = AdvancedModelLoader.loadModel(Models.ALUDEL);
+	}
 
-    public void render()
-    {
-        modelAludel.renderPart("Base");
-    }
+	public void render()
+	{
+		modelAludel.renderPart("Base");
+	}
 }

@@ -20,62 +20,62 @@ import net.minecraftforge.common.MinecraftForge;
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = "0.01")
 public class UnequalExchange4
 {
-    @Instance
-    public static UnequalExchange4 instance;
+	@Instance
+	public static UnequalExchange4 instance;
 
-    @SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
-    public static IProxy proxy;
+	@SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
+	public static IProxy proxy;
 
-    @EventHandler
-    public void invalidFingerprint(FMLFingerprintViolationEvent event)
-    {
+	@EventHandler
+	public void invalidFingerprint(FMLFingerprintViolationEvent event)
+	{
 
-    }
+	}
 
-    @EventHandler
-    public void serverStarting(FMLServerStartingEvent event)
-    {
+	@EventHandler
+	public void serverStarting(FMLServerStartingEvent event)
+	{
 
-    }
+	}
 
-    @EventHandler
-    public void preInit(FMLPreInitializationEvent event)
-    {
-        // Initialize mod items
-        ModItems.init();
+	@EventHandler
+	public void preInit(FMLPreInitializationEvent event)
+	{
+		// Initialize mod items
+		ModItems.init();
 
-        // Initialize mod blocks
-        ModBlocks.init();
-    }
+		// Initialize mod blocks
+		ModBlocks.init();
+	}
 
-    @EventHandler
-    public void init(FMLInitializationEvent event)
-    {
-        // Register the GUI Handler
-        NetworkRegistry.INSTANCE.registerGuiHandler(instance, new GuiHandler());
+	@EventHandler
+	public void init(FMLInitializationEvent event)
+	{
+		// Register the GUI Handler
+		NetworkRegistry.INSTANCE.registerGuiHandler(instance, new GuiHandler());
 
-        // Initialize mod tile entities
-        proxy.registerTileEntities();
+		// Initialize mod tile entities
+		proxy.registerTileEntities();
 
-        // Initialize custom rendering and pre-load textures (Client only)
-        proxy.initRenderingAndTextures();
+		// Initialize custom rendering and pre-load textures (Client only)
+		proxy.initRenderingAndTextures();
 
-        // Register the Items Event Handler
-        FMLCommonHandler.instance().bus().register(EventHandlers.itemEventHandler);
-        MinecraftForge.EVENT_BUS.register(EventHandlers.itemEventHandler);
+		// Register the Items Event Handler
+		FMLCommonHandler.instance().bus().register(EventHandlers.itemEventHandler);
+		MinecraftForge.EVENT_BUS.register(EventHandlers.itemEventHandler);
 
-        CraftingHandler.init();
-    }
+		CraftingHandler.init();
+	}
 
-    @EventHandler
-    public void postInit(FMLPostInitializationEvent event)
-    {
+	@EventHandler
+	public void postInit(FMLPostInitializationEvent event)
+	{
 
-    }
+	}
 
-    @EventHandler
-    public void handleIMCMessages(IMCEvent event)
-    {
+	@EventHandler
+	public void handleIMCMessages(IMCEvent event)
+	{
 
-    }
+	}
 }

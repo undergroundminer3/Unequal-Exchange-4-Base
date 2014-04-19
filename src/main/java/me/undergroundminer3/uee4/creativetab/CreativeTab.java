@@ -9,19 +9,19 @@ import net.minecraft.item.Item;
 
 public class CreativeTab
 {
-    public static final CreativeTabs EE3_TAB = new CreativeTabs(Reference.MOD_ID)
-    {
-        @Override
-        public Item getTabIconItem()
-        {
-            return ModItems.philosophersStone;
-        }
+	public static final CreativeTabs EE3_TAB = new CreativeTabs(Reference.MOD_ID)
+	{
+		@Override
+		public Item getTabIconItem()
+		{
+			return ModItems.philosophersStone;
+		}
 
-        @Override
-        @SideOnly(Side.CLIENT)
-        public String getTranslatedTabLabel()
-        {
-            return "Equivalent Exchange 3";
-        }
-    };
+		@Override
+		@SideOnly(Side.CLIENT)
+		public String getTranslatedTabLabel()
+		{
+			return "Unequal Exchange 4";
+		}
+	};
 }

@@ -10,34 +10,34 @@ import net.minecraft.world.World;
 
 public class BlockResearchStation extends BlockEE implements ITileEntityProvider
 {
-    public BlockResearchStation()
-    {
-        super(Material.rock);
-        this.setHardness(2.0f);
-        this.setBlockName(Names.Blocks.RESEARCH_STATION);
-    }
+	public BlockResearchStation()
+	{
+		super(Material.rock);
+		this.setHardness(2.0f);
+		this.setBlockName(Names.Blocks.RESEARCH_STATION);
+	}
 
-    @Override
-    public TileEntity createNewTileEntity(World world, int metaData)
-    {
-        return new TileResearchStation();
-    }
+	@Override
+	public TileEntity createNewTileEntity(World world, int metaData)
+	{
+		return new TileResearchStation();
+	}
 
-    @Override
-    public boolean renderAsNormalBlock()
-    {
-        return false;
-    }
+	@Override
+	public boolean renderAsNormalBlock()
+	{
+		return false;
+	}
 
-    @Override
-    public boolean isOpaqueCube()
-    {
-        return false;
-    }
+	@Override
+	public boolean isOpaqueCube()
+	{
+		return false;
+	}
 
-    @Override
-    public int getRenderType()
-    {
-        return RenderIds.researchStation;
-    }
+	@Override
+	public int getRenderType()
+	{
+		return RenderIds.researchStation;
+	}
 }

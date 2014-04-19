@@ -9,11 +9,12 @@ import cpw.mods.fml.common.registry.GameRegistry;
 
 public abstract class CommonProxy implements IProxy
 {
-    public void registerTileEntities()
-    {
-        GameRegistry.registerTileEntity(TileAlchemicalChest.class, "tile." + Names.Blocks.ALCHEMICAL_CHEST);
-        GameRegistry.registerTileEntity(TileAlchemicalChestSmall.class, "tile." + Names.Blocks.ALCHEMICAL_CHEST + "Small");
-        GameRegistry.registerTileEntity(TileAlchemicalChestMedium.class, "tile." + Names.Blocks.ALCHEMICAL_CHEST + "Medium");
-        GameRegistry.registerTileEntity(TileAlchemicalChestLarge.class, "tile." + Names.Blocks.ALCHEMICAL_CHEST + "Large");
-    }
+	public void registerTileEntities()
+	{
+		GameRegistry.registerTileEntity(TileAlchemicalChest.class, "tile." + Names.Blocks.ALCHEMICAL_CHEST);
+		GameRegistry.registerTileEntity(TileAlchemicalChestSmall.class, "tile." + Names.Blocks.ALCHEMICAL_CHEST + "Small");
+		GameRegistry.registerTileEntity(TileAlchemicalChestMedium.class, "tile." + Names.Blocks.ALCHEMICAL_CHEST + "Medium");
+		GameRegistry.registerTileEntity(TileAlchemicalChestLarge.class, "tile." + Names.Blocks.ALCHEMICAL_CHEST + "Large");
+	}
+
 }
