@@ -1,0 +1,76 @@
+# Key localizations
+key.charge=Charge
+key.extra=Extra
+key.release=Release
+key.toggle=Toggle
+
+# Item localizations
+item.uee4:alchemicalBag.name=Alchemical Bag
+item.uee4:alchemicalDust.ash.name=Ash
+item.uee4:alchemicalDust.verdant.name=Verdant Dust
+item.uee4:alchemicalDust.azure.name=Azure Dust
+item.uee4:alchemicalDust.minium.name=Minium Dust
+item.uee4:alchemicalFuel.alchemicalCoal.name=Alchemical Coal
+item.uee4:alchemicalFuel.mobiusFuel.name=Mobius Fuel
+item.uee4:alchemicalFuel.aeternalisFuel.name=Aeternalis Fuel
+item.uee4:chalk.name=Chalk [WIP]
+item.uee4:diviningRod.name=Divining Rod [WIP]
+item.uee4:shardMinium.name=Shard of Minium
+item.uee4:stoneInert.name=Inert Stone
+item.uee4:stoneMinium.name=Minium Stone [WIP]
+item.uee4:stonePhilosophers.name=Philosopher's Stone [WIP]
+item.uee4:alchemicalUpgrade.verdant.name=Verdant Upgrade
+item.uee4:alchemicalUpgrade.azure.name=Azure Upgrade
+item.uee4:alchemicalUpgrade.minium.name=Minium Upgrade
+
+# Block localizations
+tile.uee4:alchemicalChest.name=Alchemical Chest
+tile.uee4:alchemicalFuel.alchemicalCoal.name=Block of Alchemical Coal
+tile.uee4:alchemicalFuel.mobiusFuel.name=Block of Mobius Fuel
+tile.uee4:alchemicalFuel.aeternalisFuel.name=Block of Aeternalis Fuel
+tile.uee4:aludel.name=Aludel Base
+tile.uee4:calcinator.name=Calcinator
+tile.uee4:chalk.name=Chalk
+tile.uee4:glassBell.name=Glass Bell
+tile.uee4:researchStation.name=Research Station [WIP]
+tile.uee4:infusedCloth.name=Infused Cloth
+tile.uee4:infusedWood.name=Infused Wood
+tile.uee4:infusedPlank.name=Infused Wood Planks
+
+# GUI localizations
+container.uee4:alchemicalBag=Alchemical Bag
+container.uee4:alchemicalChest=Alchemical Chest
+container.uee4:aludel=Aludel
+container.uee4:calcinator=Calcinator
+container.uee4:glassBell=Glass Bell
+container.uee4:researchStation=Research Station [WIP]
+
+# Command localizations
+command.uee4:overlay.turned_on=Target transmutation overlay turned on
+command.uee4:overlay.turned_off=Target transmutation overlay turned off
+command.uee4:overlay.position.top_left=Target transmutation overlay position set to top left
+command.uee4:overlay.position.top_right=Target transmutation overlay position set to top right
+command.uee4:overlay.position.bottom_left=Target transmutation overlay position set to bottom left
+command.uee4:overlay.position.bottom_right=Target transmutation overlay position set to bottom right
+command.uee4:overlay.opacity.usage.additional_text=(where ### is a decimal value between 0.0 and 1.0) 
+command.uee4:overlay.opacity.updated=Target transmutation overlay opacity updated successfully
+command.uee4:overlay.scale.usage.additional_text=%s (where ### is a decimal value greater than 0.0) 
+command.uee4:overlay.scale.updated=Target transmutation overlay scale updated successfully
+command.uee4:particles.turned_on=Unequal Exchange 4 particles turned on
+command.uee4:particles.turned_off=Unequal Exchange 4 particles turned off
+command.uee4:sounds.set_to_all=Playing Unequal Exchange 4 sounds from all players
+command.uee4:sounds.set_to_self=Playing Unequal Exchange 4 sounds from self only
+command.uee4:sounds.turned_off=Playing Unequal Exchange 4 sounds disabled
+
+# Version check localizations
+version.uee4:init_log_message=Initializing remote version check against remote version authority, located at: %s
+version.uee4:uninitialized=Remote version check failed to initialize properly
+version.uee4:current=Currently using the most up to date version (%s) of Unequal Exchange 4 for %s
+version.uee4:outdated=A new %s version exists (%s) for %s. Get it here: %s
+version.uee4:general_error=Error while connecting to remote version authority file; trying again
+version.uee4:final_error=Version check stopping after three unsuccessful connection attempts
+version.uee4:mc_version_not_found=Unable to find a version of %s for %s in the remote version authority
+
+# Tooltip localizations
+tooltip.uee4:infusedPrefix=Infused with
+tooltip.uee4:upgradesPrefix=Upgrades (Alchemical) Chests

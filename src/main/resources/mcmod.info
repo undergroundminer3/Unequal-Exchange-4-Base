@@ -1,17 +1,18 @@
 [
 {
-  "modid": "EE3",
-  "name": "Equivalent Exchange 3",
-  "description": "Transmute stuff into other stuff! Become a Minecraft God!",
+  "modid": "UEE4",
+  "name": "Unequal Exchange 4",
+  "description": "",
   "version": "${version}",
-  "url": "http://www.minecraftforum.net/topic/1106178-",
+  "url": "[TODO] [IF YOU SEE THIS, PLEASE REMIND Undergroundminer3 to Update]",
   "updateUrl": "",
   "authorList": [
     "pahimar",
-    "x3n0ph0b3"
+    "x3n0ph0b3",
+    "undergroundminer3"
   ],
-  "credits": "By pahimar, based on Equivalent Exchange 1 & 2 by x3n0ph0b3",
-  "logoFile": "/assets/ee3/textures/logo/logo.png",
+  "credits": "By undregroundminer3, based on Equivalent Exchange 3 by pahimar, based on Equivalent Exchange 1 & 2 by x3n0ph0b3",
+  "logoFile": "/assets/uee4/textures/logo/logo.png",
   "screenshots": [
   ],
   "parent":"",

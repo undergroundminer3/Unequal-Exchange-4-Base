@@ -17,9 +17,9 @@ buildscript {
 
 apply plugin: 'forge'
 
-version = "0.2"
-group = "com.pahimar.ee3" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "EquivalentExchange3"
+version = "0.01"
+group = "me.undergroundminer3.uee4" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = "UnequalExchange4"
 
 minecraft {
     version = "1.7.2-10.12.0.1056"
