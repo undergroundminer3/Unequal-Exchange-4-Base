@@ -13,6 +13,22 @@ public final class CheatDetector {
 		} else {
 			if (!silence) LogHelper.warn("Unequal Exchange Cheat detection was disabled. (Now, who could have done that?)");
 		}
+		detectEE3();
+	}
+	
+	private static void detectEE3() {
+		boolean ee = true;
+		
+		try {
+			Class.forName("com.pahimar.ee3.EquivalentExchange3");
+		} catch (ClassNotFoundException e) {
+			ee = false;
+		}
+		
+		if (ee == true) {
+			LogHelper.fatal("[UEE4] Retro: EE3!");
+			throw new RuntimeException("Equivalent Exchange 3 was detected! Delete it and use UEE4 instead! (RETRO)");
+		}
 	}
 	
 	private static void detectCheats_do() {
