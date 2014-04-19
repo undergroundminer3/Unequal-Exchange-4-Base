@@ -18,28 +18,28 @@ public final class EmcDataRegistry {
 	 * <br/>
 	 * Register only fallback (recipe-based) providers here.
 	 */
-	private static ArrayList<EmcDataProvider> provList1 = new ArrayList<>();
+	private static ArrayList<EmcDataProvider> provList1 = new ArrayList<EmcDataProvider>();
 
 	/**
 	 * The 2nd Last list that the registry will consult to get emc data.
 	 * <br/>
 	 * If you making a mod, register you providers here!!!!
 	 */
-	private static ArrayList<EmcDataProvider> provList2 = new ArrayList<>();
+	private static ArrayList<EmcDataProvider> provList2 = new ArrayList<EmcDataProvider>();
 
 	/**
 	 * The 2nd list that the registry will consult to get emc data.
 	 * <br/>
 	 * If you making a mod extension, register here.
 	 */
-	private static ArrayList<EmcDataProvider> provList3 = new ArrayList<>();
+	private static ArrayList<EmcDataProvider> provList3 = new ArrayList<EmcDataProvider>();
 
 	/**
 	 * The 1st list that the registry will consult to get emc data.
 	 * <br/>
 	 * Register only "gregtech", and "better than wolves", and "modpack" hardcore mod providers here.
 	 */
-	private static ArrayList<EmcDataProvider> provList4 = new ArrayList<>();
+	private static ArrayList<EmcDataProvider> provList4 = new ArrayList<EmcDataProvider>();
 
 	public static EmcData getEmc(final ItemStack stack) {
 		EmcData data = null;
