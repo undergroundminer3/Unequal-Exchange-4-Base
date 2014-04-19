@@ -2,13 +2,16 @@ package me.undergroundminer3.uee4.proxy;
 
 import cpw.mods.fml.client.registry.ClientRegistry;
 import cpw.mods.fml.client.registry.RenderingRegistry;
+import cpw.mods.fml.common.FMLCommonHandler;
 import me.undergroundminer3.uee4.block.ModBlocks;
 import me.undergroundminer3.uee4.client.renderer.item.*;
 import me.undergroundminer3.uee4.client.renderer.tileentity.*;
+import me.undergroundminer3.uee4.emc.EmcTooltipHandler;
 import me.undergroundminer3.uee4.reference.RenderIds;
 import me.undergroundminer3.uee4.tileentity.*;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.MinecraftForgeClient;
+import net.minecraftforge.common.MinecraftForge;
 
 public class ClientProxy extends CommonProxy
 {
@@ -32,5 +35,8 @@ public class ClientProxy extends CommonProxy
 		ClientRegistry.bindTileEntitySpecialRenderer(TileAludel.class, new TileEntityAludelRenderer());
 		ClientRegistry.bindTileEntitySpecialRenderer(TileGlassBell.class, new TileEntityGlassBellRenderer());
 		ClientRegistry.bindTileEntitySpecialRenderer(TileResearchStation.class, new TileEntityResearchStationRenderer());
+		
+//		FMLCommonHandler.instance().bus().register(new EmcTooltipHandler());
+		MinecraftForge.EVENT_BUS.register(new EmcTooltipHandler());
 	}
 }

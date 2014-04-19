@@ -9,6 +9,8 @@ import net.minecraft.item.ItemStack;
 
 public final class EmcDataRegistry {
 
+	//better than pahimar's immutable map way
+	
 	private EmcDataRegistry() {};
 
 	/**
@@ -106,7 +108,7 @@ public final class EmcDataRegistry {
 	
 	public static void init() {
 		if (didInit == true) return;
-		registerProvider(new EmcDataVanilla(), MOD_PRIORITY);
+		registerProvider(new EmcDataVanillaFuel(), MOD_PRIORITY);
 		didInit = true;
 	}
 }
