@@ -32,6 +32,13 @@ public class Names
 		public static final String ALCHEMICAL_UPGRADE = "alchemicalUpgrade";
 		public static final String[] ALCHEMICAL_UPGRADE_SUBTYPES = {"verdant", "azure", "minium"};
 		public static final String DIVINING_ROD = "diviningRod";
+		
+		public static final String EMC_BUCKET = "bucketEmc";
+	}
+	
+	public static class Liquids
+	{
+		public static final String LIQUID_EMC = "liquidEmc";
 	}
 
 	public static class NBT

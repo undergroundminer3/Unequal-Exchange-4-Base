@@ -3,7 +3,11 @@ package me.undergroundminer3.uee4.item;
 import cpw.mods.fml.common.registry.GameRegistry;
 import me.undergroundminer3.uee4.block.ModBlocks;
 import me.undergroundminer3.uee4.reference.Names;
+import net.minecraft.init.Items;
 import net.minecraft.item.ItemBlock;
+import net.minecraft.item.ItemStack;
+import net.minecraftforge.fluids.FluidContainerRegistry;
+import net.minecraftforge.fluids.FluidRegistry;
 
 public class ModItems
 {
@@ -18,6 +22,7 @@ public class ModItems
 	public static final ItemEE chalk = new ItemChalk();
 	public static final ItemEE diviningRod = new ItemDiviningRod();
 	public static final ItemBlock alchemicalChest = new ItemBlockAlchemicalChest(ModBlocks.alchemicalChest);
+	public static final BucketEE bucketEmc = new BucketEMC(ModBlocks.liquidEmcBlock);
 
 	public static void init()
 	{
@@ -31,5 +36,11 @@ public class ModItems
 		GameRegistry.registerItem(chalk, "item." + Names.Items.CHALK);
 		GameRegistry.registerItem(alchemicalInventoryUpgrade, "item." + Names.Items.ALCHEMICAL_UPGRADE);
 		GameRegistry.registerItem(diviningRod, "item." + Names.Items.DIVINING_ROD);
+		
+		bucketEmc.setContainerItem(Items.bucket);
+		GameRegistry.registerItem(bucketEmc, "item." + Names.Items.EMC_BUCKET);
+		
+		FluidContainerRegistry.registerFluidContainer(FluidRegistry.getFluidStack("liquidEmc", FluidContainerRegistry.BUCKET_VOLUME), new ItemStack(bucketEmc), new ItemStack(Items.bucket));
+		
 	}
 }

@@ -36,6 +36,7 @@ tile.uee4:researchStation.name=Research Station [WIP]
 tile.uee4:infusedCloth.name=Infused Cloth
 tile.uee4:infusedWood.name=Infused Wood
 tile.uee4:infusedPlank.name=Infused Wood Planks
+tile.uee4:liquidEmc.name=Liquid EMC
 
 # GUI localizations
 container.uee4:alchemicalBag=Alchemical Bag

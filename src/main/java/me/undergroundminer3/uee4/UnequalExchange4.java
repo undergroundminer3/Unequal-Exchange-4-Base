@@ -40,19 +40,21 @@ public class UnequalExchange4
 	{
 		EmcDataRegistry.init();
 		Config.load(event.getModConfigurationDirectory());
-		
-		// Initialize mod items
-		ModItems.init();
+
+
 
 		// Initialize mod blocks
 		ModBlocks.init();
+
+		// Initialize mod items
+		ModItems.init();
 	}
 
 	@EventHandler
 	public void init(FMLInitializationEvent event)
 	{
 		CheatDetector.detectCheats(false);
-		
+
 		// Register the GUI Handler
 		NetworkRegistry.INSTANCE.registerGuiHandler(instance, new GuiHandler());
 
