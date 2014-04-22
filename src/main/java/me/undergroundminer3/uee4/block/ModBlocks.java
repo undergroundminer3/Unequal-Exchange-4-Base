@@ -1,8 +1,11 @@
 package me.undergroundminer3.uee4.block;
 
+import buildcraft.transport.BlockGenericPipe;
 import net.minecraft.block.material.Material;
 import net.minecraftforge.fluids.Fluid;
 import net.minecraftforge.fluids.FluidRegistry;
+import me.undergroundminer3.uee4.emc1energy.Emc1Blocks;
+import me.undergroundminer3.uee4.emctransport.ModPipes;
 import me.undergroundminer3.uee4.item.*;
 import me.undergroundminer3.uee4.reference.Names;
 import me.undergroundminer3.uee4.worldgen.WorldGenEmcSpring;
@@ -47,6 +50,8 @@ public class ModBlocks
 		fluidEmc.setUnlocalizedName("liquidEmc");
 		
 		GameRegistry.registerWorldGenerator(new WorldGenEmcSpring(), 32);
-
+		
+		ModPipes.init();
+		Emc1Blocks.init();
 	}
 }

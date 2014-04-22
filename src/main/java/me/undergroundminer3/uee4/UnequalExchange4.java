@@ -14,13 +14,14 @@ import me.undergroundminer3.uee4.emc.EmcDataRegistry;
 import me.undergroundminer3.uee4.handler.CraftingHandler;
 import me.undergroundminer3.uee4.handler.GuiHandler;
 import me.undergroundminer3.uee4.item.ModItems;
+import me.undergroundminer3.uee4.network2.ModNetworking;
 import me.undergroundminer3.uee4.proxy.IProxy;
 import me.undergroundminer3.uee4.reference.EventHandlers;
 import me.undergroundminer3.uee4.reference.Reference;
-import me.undergroundminer3.uee4.util.CheatDetector;
+import me.undergroundminer3.uee4.util2.CheatDetector;
 import net.minecraftforge.common.MinecraftForge;
 
-@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = "0.01")
+@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = "0.01", dependencies = Reference.DEPENDENCIES)
 public class UnequalExchange4
 {
 	@Instance
@@ -57,6 +58,8 @@ public class UnequalExchange4
 
 		// Register the GUI Handler
 		NetworkRegistry.INSTANCE.registerGuiHandler(instance, new GuiHandler());
+		
+		ModNetworking.init();
 
 		// Initialize mod tile entities
 		proxy.registerTileEntities();

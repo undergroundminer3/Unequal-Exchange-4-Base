@@ -2,7 +2,7 @@ package me.undergroundminer3.uee4.emc;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-import me.undergroundminer3.uee4.util.LogHelper;
+import me.undergroundminer3.uee4.util2.LogHelper;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.event.entity.player.ItemTooltipEvent;
 

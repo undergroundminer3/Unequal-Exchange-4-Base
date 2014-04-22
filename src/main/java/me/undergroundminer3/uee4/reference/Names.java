@@ -38,7 +38,7 @@ public class Names
 	
 	public static class Liquids
 	{
-		public static final String LIQUID_EMC = "liquidEmc";
+		public static final String LIQUID_EMC = "liquidemc";
 	}
 
 	public static class NBT

@@ -6,8 +6,11 @@ import me.undergroundminer3.uee4.reference.Names;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fluids.FluidContainerRegistry;
 import net.minecraftforge.fluids.FluidRegistry;
+
+import me.undergroundminer3.uee4.buckethelper.BucketHelper;
 
 public class ModItems
 {
@@ -40,7 +43,13 @@ public class ModItems
 		bucketEmc.setContainerItem(Items.bucket);
 		GameRegistry.registerItem(bucketEmc, "item." + Names.Items.EMC_BUCKET);
 		
-		FluidContainerRegistry.registerFluidContainer(FluidRegistry.getFluidStack("liquidEmc", FluidContainerRegistry.BUCKET_VOLUME), new ItemStack(bucketEmc), new ItemStack(Items.bucket));
+		FluidContainerRegistry.registerFluidContainer(FluidRegistry.getFluidStack(Names.Liquids.LIQUID_EMC,
+				FluidContainerRegistry.BUCKET_VOLUME),
+				new ItemStack(bucketEmc),
+				new ItemStack(Items.bucket));
+		
+		BucketHelper.INSTANCE.buckets.put(ModBlocks.liquidEmcBlock, bucketEmc);
+		MinecraftForge.EVENT_BUS.register(BucketHelper.INSTANCE);
 		
 	}
 }

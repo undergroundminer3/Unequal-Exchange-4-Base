@@ -2,7 +2,7 @@ package me.undergroundminer3.uee4.emc;
 
 import java.util.ArrayList;
 
-import me.undergroundminer3.uee4.util.LogHelper;
+import me.undergroundminer3.uee4.util2.LogHelper;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;

@@ -23,6 +23,9 @@ item.uee4:alchemicalUpgrade.verdant.name=Verdant Upgrade
 item.uee4:alchemicalUpgrade.azure.name=Azure Upgrade
 item.uee4:alchemicalUpgrade.minium.name=Minium Upgrade
 
+item.uee4:liquidemc=Liquid Emc
+item.uee4:bucketEmc=Bucket of Emc
+
 # Block localizations
 tile.uee4:alchemicalChest.name=Alchemical Chest
 tile.uee4:alchemicalFuel.alchemicalCoal.name=Block of Alchemical Coal

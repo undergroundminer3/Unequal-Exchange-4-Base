@@ -4,25 +4,28 @@ public class EmcData {
 
 	//influenced by thuamcraft?
 
-	public int air; //air
-	public int aqua; //water
-	public int terra; //stone
-	public int electra; //electricity
-	public int nil; //void
-	public int luma; //light r*g*b (colored lights) or l*l*l
-	public int or; //mineral
-	public int viva; //living (hunger*20)
+	//matter
+	public int air; //air CH0
+	public int aqua; //water CH1
+	public int terra; //stone CH2
+	public int electra; //electricity CH3
+	public int nil; //void CH4
+	public int luma; //light r*g*b (colored lights) or l*l*l CH5
+	public int or; //mineral CH6
+	public int viva; //living (hunger*20) CH7
 
-	public int temperature; //hot+ 0room0 cold-
-	public int potenta; //fuel, burning time in ticks?
-	public int strengtha; //strength (wood-grass)
-	public int complexa; //complexity (buildcraft quarry vs redstone) -tinytech- 0normal0 +supertech+
-	public int modifa1; //spare modifier
-	public int modifa2; //spare modifier
-	public int mante; //glass-like -reflective- 0stone0 +mirror+
-	public int kindoma; // -plant- 0neutral0 +animal+
-	public int worlda; // -nether- 0overworld0 +end+
-	public int luxa; //luxury, swamp and dirt, vs biomes o plenty promised land
+	//energy
+	public int temperature; //hot+ 0room0 cold- CH8
+	public int potenta; //fuel, burning time in ticks? CH9
+	public int strengtha; //strength (wood-grass) CH10
+	public int complexa; //complexity (buildcraft quarry vs redstone) -tinytech- 0normal0 +supertech+ CH11
+	public int modifa1; //spare modifier CH12
+	public int modifa2; //spare modifier CH13
+	public int mante; //glass-like -reflective- 0stone0 +mirror+ CH14
+	public int kindoma; // -plant- 0neutral0 +animal+ CH15
+	public int worlda; // -nether- 0overworld0 +end+ CH16
+	public int luxa; //luxury, swamp and dirt, vs biomes o plenty promised land CH17
+	public int mecha; //mechanical gears CH18
 
 	//TODO able to add properties?
 
@@ -49,6 +52,7 @@ public class EmcData {
 		result.kindoma = this.kindoma;
 		result.worlda = this.worlda;
 		result.luxa = this.luxa;
+		result.mecha = this.mecha;
 
 		return result;
 	}
@@ -75,6 +79,7 @@ public class EmcData {
 		result.kindoma = this.kindoma * ammount;
 		result.worlda = this.worlda * ammount;
 		result.luxa = this.luxa * ammount;
+		result.mecha = this.mecha * ammount;
 
 		return result;
 	}
