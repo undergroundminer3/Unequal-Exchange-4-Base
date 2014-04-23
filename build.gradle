@@ -22,7 +22,7 @@ group = "me.undergroundminer3.uee4" // http://maven.apache.org/guides/mini/guide
 archivesBaseName = "UnequalExchange4"
 
 minecraft {
-    version = "1.7.2-10.12.0.1061"
+    version = "1.7.2-10.12.1.1061"
     assetDir = "eclipse/assets"
 }
 processResources
