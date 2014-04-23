@@ -34,6 +34,7 @@ public class Names
 		public static final String DIVINING_ROD = "diviningRod";
 		
 		public static final String EMC_BUCKET = "bucketEmc";
+		public static final String EMC_PACKET = "packetEmc";
 	}
 	
 	public static class Liquids

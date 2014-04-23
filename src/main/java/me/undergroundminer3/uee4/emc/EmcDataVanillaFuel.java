@@ -12,6 +12,9 @@ class EmcDataVanillaFuel implements EmcDataProvider{
 	public EmcData provide(final ItemStack stack) {
 
 		final Item item = stack.getItem();
+		
+		if (item == null) return new EmcData();
+		
 		final int damage = stack.getItemDamage();
 		final EmcData data = new EmcData();
 		boolean got = false;

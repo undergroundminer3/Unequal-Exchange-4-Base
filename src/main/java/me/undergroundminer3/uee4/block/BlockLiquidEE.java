@@ -49,6 +49,8 @@ public class BlockLiquidEE extends BlockFluidClassic {
 		stillIcon = register.registerIcon(String.format("%s", getUnwrappedUnlocalizedName(this.getUnlocalizedName()))+"_still");
 		flowingIcon = register.registerIcon(String.format("%s", getUnwrappedUnlocalizedName(this.getUnlocalizedName()))+"_flowing");
 	}
+	
+	
 
 	@Override
 	public boolean canDisplace(IBlockAccess world, int x, int y, int z) {
