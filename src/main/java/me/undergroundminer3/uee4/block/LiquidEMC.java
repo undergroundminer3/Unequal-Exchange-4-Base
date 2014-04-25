@@ -1,5 +1,7 @@
 package me.undergroundminer3.uee4.block;
 
+import me.undergroundminer3.uee4.abstacts.LiquidEE;
+
 public class LiquidEMC extends LiquidEE {
 
 	public LiquidEMC(final String name) {

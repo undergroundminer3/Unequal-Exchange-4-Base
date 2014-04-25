@@ -2,6 +2,7 @@ package me.undergroundminer3.uee4.block;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import me.undergroundminer3.uee4.abstacts.BlockEE;
 import me.undergroundminer3.uee4.reference.Colors;
 import me.undergroundminer3.uee4.reference.Names;
 import net.minecraft.block.material.Material;
@@ -36,6 +37,7 @@ public class BlockInfusedWood extends BlockEE
 	}
 
 	@Override
+	@SuppressWarnings("all")
 	@SideOnly(Side.CLIENT)
 	public void getSubBlocks(Item item, CreativeTabs creativeTabs, List list)
 	{

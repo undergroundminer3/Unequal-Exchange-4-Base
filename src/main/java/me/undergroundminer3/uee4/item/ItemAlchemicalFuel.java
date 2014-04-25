@@ -2,6 +2,7 @@ package me.undergroundminer3.uee4.item;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import me.undergroundminer3.uee4.abstacts.ItemEE;
 import me.undergroundminer3.uee4.reference.Names;
 import me.undergroundminer3.uee4.reference.Textures;
 import net.minecraft.client.renderer.texture.IIconRegister;
@@ -39,6 +40,7 @@ public class ItemAlchemicalFuel extends ItemEE
 	}
 
 	@Override
+	@SuppressWarnings("all")
 	@SideOnly(Side.CLIENT)
 	public void getSubItems(Item item, CreativeTabs creativeTab, List list)
 	{

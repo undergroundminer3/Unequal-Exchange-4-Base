@@ -23,6 +23,7 @@ public class ItemBlockAlchemicalChest extends ItemBlock
 		return meta;
 	}
 
+	@SuppressWarnings("all")
 	@SideOnly(Side.CLIENT)
 	public void addInformation(ItemStack itemStack, EntityPlayer entityPlayer, List list, boolean flag)
 	{

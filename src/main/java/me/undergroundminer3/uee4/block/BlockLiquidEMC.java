@@ -1,7 +1,6 @@
 package me.undergroundminer3.uee4.block;
 
-import me.undergroundminer3.uee4.util2.LogHelper;
-import net.minecraft.block.Block;
+import me.undergroundminer3.uee4.abstacts.BlockLiquidEE;
 import net.minecraft.block.material.Material;
 import net.minecraftforge.fluids.Fluid;
 

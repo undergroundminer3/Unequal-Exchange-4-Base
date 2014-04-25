@@ -2,6 +2,7 @@ package me.undergroundminer3.uee4.item;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import me.undergroundminer3.uee4.abstacts.BucketEE;
 import me.undergroundminer3.uee4.reference.Names;
 import me.undergroundminer3.uee4.reference.Textures;
 import net.minecraft.block.Block;

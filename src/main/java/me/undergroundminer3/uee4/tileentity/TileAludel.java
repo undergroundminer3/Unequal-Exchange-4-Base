@@ -1,5 +1,6 @@
 package me.undergroundminer3.uee4.tileentity;
 
+import me.undergroundminer3.uee4.abstacts.TileEntityEE;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.ISidedInventory;
 import net.minecraft.item.ItemStack;
@@ -16,14 +17,15 @@ public class TileAludel extends TileEntityEE implements ISidedInventory
 	public int itemCookTime;                // How long the current item has been "cooking"
 	public ItemStack outputItemStack;
 	public boolean hasGlassBell = false;
-	/**
-	 * The ItemStacks that hold the items currently being used in the Aludel
-	 */
-	private ItemStack[] inventory;
+	//TODO implement
+//	/**
+//	 * The ItemStacks that hold the items currently being used in the Aludel
+//	 */
+//	private ItemStack[] inventory;
 
 	public TileAludel()
 	{
-		inventory = new ItemStack[INVENTORY_SIZE];
+//		inventory = new ItemStack[INVENTORY_SIZE];
 	}
 
 	@Override

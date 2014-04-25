@@ -1,5 +1,6 @@
 package me.undergroundminer3.uee4.block;
 
+import me.undergroundminer3.uee4.abstacts.BlockEE;
 import me.undergroundminer3.uee4.reference.Names;
 import me.undergroundminer3.uee4.reference.RenderIds;
 import me.undergroundminer3.uee4.tileentity.TileAludel;

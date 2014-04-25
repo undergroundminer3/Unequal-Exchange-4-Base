@@ -1,0 +1,16 @@
+
+The Unequal Exchange 4 licensing is a mess right now.
+
+The part that was forked (copied) from Equivalent Exchange 3 is GPL3.
+This includes the basic mod files, the blocks and items, and basically everything else.
+
+That part that was copied from Buildcraft is MMPL (Minecraft mod public license)
+This includes the pipes, and the emc energy system,
+and the pipes, and machines and textures that deal with it.
+
+If you have a question, please do not hesitate to contatct UndergroundMiner3.
+
+If you have a solution, know the solution,
+if you can help, you can create an issue,
+or even submit a pull request yourself!
+

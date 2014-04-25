@@ -2,12 +2,11 @@ package me.undergroundminer3.uee4.proxy;
 
 import cpw.mods.fml.client.registry.ClientRegistry;
 import cpw.mods.fml.client.registry.RenderingRegistry;
-import cpw.mods.fml.common.FMLCommonHandler;
-import me.undergroundminer3.uee4.block.ModBlocks;
 import me.undergroundminer3.uee4.client.renderer.item.*;
 import me.undergroundminer3.uee4.client.renderer.tileentity.*;
 import me.undergroundminer3.uee4.emc.EmcTooltipHandler;
-import me.undergroundminer3.uee4.emctransport.ModRenderers2;
+import me.undergroundminer3.uee4.init.ModBlocks;
+import me.undergroundminer3.uee4.init2.InitPipeRenderers;
 import me.undergroundminer3.uee4.reference.RenderIds;
 import me.undergroundminer3.uee4.tileentity.*;
 import net.minecraft.item.Item;
@@ -40,7 +39,7 @@ public class ClientProxy extends CommonProxy
 //		FMLCommonHandler.instance().bus().register(new EmcTooltipHandler());
 		MinecraftForge.EVENT_BUS.register(new EmcTooltipHandler());
 		
-		ModRenderers2.init();
+		InitPipeRenderers.init();
 		
 	}
 }

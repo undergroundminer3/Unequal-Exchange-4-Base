@@ -2,17 +2,9 @@ package me.undergroundminer3.uee4.emc;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-import me.undergroundminer3.uee4.util2.LogHelper;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.event.entity.player.ItemTooltipEvent;
-
 import org.lwjgl.input.Keyboard;
-
-import java.text.DecimalFormat;
-
-import cpw.mods.fml.common.Mod.EventHandler;
-import cpw.mods.fml.common.eventhandler.Event;
-import cpw.mods.fml.common.eventhandler.IEventListener;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 
 
@@ -44,7 +36,7 @@ public class EmcTooltipHandler
 			if (rsh) {
 				final ItemStack stack = new ItemStack(event.itemStack.getItem(), 1, event.itemStack.getItemDamage());
 				final EmcData data = EmcDataRegistry.getEmc(stack);
-				
+
 				EmcDisplayHelper.addToolTips(event, data, "EMC (Item): ");
 			}
 

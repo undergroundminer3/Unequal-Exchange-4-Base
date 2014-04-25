@@ -6,6 +6,7 @@ import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ChatComponentText;
 import net.minecraft.world.World;
+import me.undergroundminer3.uee4.abstacts.ItemEE;
 import me.undergroundminer3.uee4.emc.EmcData;
 import me.undergroundminer3.uee4.emc.EmcDataRegistry;
 import me.undergroundminer3.uee4.emc.EmcDisplayHelper;

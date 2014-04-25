@@ -1,6 +1,7 @@
 package me.undergroundminer3.uee4.block;
 
-import me.undergroundminer3.uee4.item.ModItems;
+import me.undergroundminer3.uee4.abstacts.BlockEE;
+import me.undergroundminer3.uee4.init.ModItems;
 import me.undergroundminer3.uee4.reference.Names;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;

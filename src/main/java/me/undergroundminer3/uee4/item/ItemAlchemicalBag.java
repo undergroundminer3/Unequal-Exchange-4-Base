@@ -3,6 +3,7 @@ package me.undergroundminer3.uee4.item;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import me.undergroundminer3.uee4.UnequalExchange4;
+import me.undergroundminer3.uee4.abstacts.ItemEE;
 import me.undergroundminer3.uee4.reference.Colors;
 import me.undergroundminer3.uee4.reference.GuiIds;
 import me.undergroundminer3.uee4.reference.Names;
@@ -75,6 +76,7 @@ public class ItemAlchemicalBag extends ItemEE implements IDyeable
 	}
 
 	@Override
+	@SuppressWarnings("all")
 	@SideOnly(Side.CLIENT)
 	public void getSubItems(Item item, CreativeTabs creativeTab, List list)
 	{

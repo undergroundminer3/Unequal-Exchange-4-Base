@@ -1,5 +1,6 @@
 package me.undergroundminer3.uee4.tileentity;
 
+import me.undergroundminer3.uee4.abstacts.TileEntityEE;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
@@ -9,18 +10,20 @@ public class TileGlassBell extends TileEntityEE implements IInventory
 	public static final int INVENTORY_SIZE = 1;
 	public static final int DISPLAY_SLOT_INVENTORY_INDEX = 0;
 	public ItemStack outputItemStack;
-	/**
-	 * Server sync counter (once per 20 ticks)
-	 */
-	private int ticksSinceSync;
-	/**
-	 * The ItemStacks that hold the items currently being used in the Glass Bell
-	 */
-	private ItemStack[] inventory;
+	
+	//TODO implement
+//	/**
+//	 * Server sync counter (once per 20 ticks)
+//	 */
+//	private int ticksSinceSync;
+//	/**
+//	 * The ItemStacks that hold the items currently being used in the Glass Bell
+//	 */
+//	private ItemStack[] inventory;
 
 	public TileGlassBell()
 	{
-		inventory = new ItemStack[INVENTORY_SIZE];
+//		inventory = new ItemStack[INVENTORY_SIZE];
 	}
 
 	@Override

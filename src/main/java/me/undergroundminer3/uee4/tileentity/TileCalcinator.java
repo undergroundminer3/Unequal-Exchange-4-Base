@@ -1,5 +1,6 @@
 package me.undergroundminer3.uee4.tileentity;
 
+import me.undergroundminer3.uee4.abstacts.TileEntityEE;
 import me.undergroundminer3.uee4.reference.Names;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.ISidedInventory;
@@ -13,7 +14,7 @@ public class TileCalcinator extends TileEntityEE implements ISidedInventory
 	public static final int INPUT_INVENTORY_INDEX = 1;
 	public static final int OUTPUT_LEFT_INVENTORY_INDEX = 2;
 	public static final int OUTPUT_RIGHT_INVENTORY_INDEX = 3;
-	private static final int DEFAULT_ITEM_SUCK_COOL_DOWN = 20;
+	public static final int DEFAULT_ITEM_SUCK_COOL_DOWN = 20;
 	public int deviceCookTime;              // How much longer the Calcinator will cook
 	public int fuelBurnTime;                // The fuel value for the currently burning fuel
 	public int itemCookTime;                // How long the current item has been "cooking"

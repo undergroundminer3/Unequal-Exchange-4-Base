@@ -2,6 +2,7 @@ package me.undergroundminer3.uee4.item;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import me.undergroundminer3.uee4.init.ModItems;
 import me.undergroundminer3.uee4.reference.Messages;
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
@@ -25,6 +26,7 @@ public class ItemBlockInfusedPlank extends ItemBlock
 		return meta;
 	}
 
+	@SuppressWarnings("all")
 	@SideOnly(Side.CLIENT)
 	public void addInformation(ItemStack itemStack, EntityPlayer entityPlayer, List list, boolean flag)
 	{

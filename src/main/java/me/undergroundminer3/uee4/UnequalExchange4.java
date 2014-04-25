@@ -1,29 +1,16 @@
 package me.undergroundminer3.uee4;
 
-import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.*;
-import cpw.mods.fml.common.event.FMLInterModComms.IMCEvent;
-import cpw.mods.fml.common.network.NetworkRegistry;
-import me.undergroundminer3.uee4.block.ModBlocks;
-import me.undergroundminer3.uee4.config.Config;
-import me.undergroundminer3.uee4.emc.EmcDataRegistry;
-import me.undergroundminer3.uee4.handler.CraftingHandler;
-import me.undergroundminer3.uee4.handler.GuiHandler;
-import me.undergroundminer3.uee4.item.ModItems;
-import me.undergroundminer3.uee4.network2.ModNetworking;
+import me.undergroundminer3.uee4.init0.CoreInitHelper;
 import me.undergroundminer3.uee4.proxy.IProxy;
-import me.undergroundminer3.uee4.reference.EventHandlers;
 import me.undergroundminer3.uee4.reference.Reference;
-import me.undergroundminer3.uee4.util2.CheatDetector;
-import net.minecraftforge.common.MinecraftForge;
-
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = "0.01", dependencies = Reference.DEPENDENCIES)
-public class UnequalExchange4
-{
+
+public final class UnequalExchange4 {
 	@Instance
 	public static UnequalExchange4 instance;
 
@@ -31,52 +18,54 @@ public class UnequalExchange4
 	public static IProxy proxy;
 
 	@EventHandler
-	public void serverStarting(FMLServerStartingEvent event)
-	{
-		CheatDetector.detectCheats(false);
+	public final void serverStarting(final FMLServerStartingEvent event) {
+		CoreInitHelper.ss_init0();
+		CoreInitHelper.ss_init1();
 	}
 
 	@EventHandler
-	public void preInit(FMLPreInitializationEvent event)
-	{
-		EmcDataRegistry.init();
-		Config.load(event.getModConfigurationDirectory());
+	public final void serverStarted(final FMLServerStartedEvent event) {
+		CoreInitHelper.ss_init2();
+		CoreInitHelper.ss_init3();
+	}
 
 
-
-		// Initialize mod blocks
-		ModBlocks.init();
-
-		// Initialize mod items
-		ModItems.init();
+	@EventHandler
+	public final void serverStopped(final FMLServerStoppedEvent event) {
+		CoreInitHelper.ss_halt1();
+		CoreInitHelper.ss_halt0();
 	}
 
 	@EventHandler
-	public void init(FMLInitializationEvent event)
-	{
-		CheatDetector.detectCheats(false);
+	public final void serverStopping(final FMLServerStoppingEvent event) {
+		CoreInitHelper.ss_halt3();
+		CoreInitHelper.ss_halt2();
+	}
 
-		// Register the GUI Handler
-		NetworkRegistry.INSTANCE.registerGuiHandler(instance, new GuiHandler());
+	@EventHandler
+	public final void preInit(final FMLPreInitializationEvent event)
+	{
+		CoreInitHelper.initCore(event.getModConfigurationDirectory());
+
+		CoreInitHelper.init0();
+
+		CoreInitHelper.init1();
+
+	}
+
+	@EventHandler
+	public final void init(FMLInitializationEvent event)
+	{
+		CoreInitHelper.init2();
 		
-		ModNetworking.init();
-
-		// Initialize mod tile entities
-		proxy.registerTileEntities();
-
-		// Initialize custom rendering and pre-load textures (Client only)
-		proxy.initRenderingAndTextures();
-
-		// Register the Items Event Handler
-		FMLCommonHandler.instance().bus().register(EventHandlers.itemEventHandler);
-		MinecraftForge.EVENT_BUS.register(EventHandlers.itemEventHandler);
-
-		CraftingHandler.init();
+		CoreInitHelper.init3();
 	}
 
 	@EventHandler
-	public void postInit(FMLPostInitializationEvent event)
+	public final void postInit(FMLPostInitializationEvent event)
 	{
-		CheatDetector.detectCheats(true);
+		CoreInitHelper.init4();
+		
+		CoreInitHelper.init5();
 	}
 }

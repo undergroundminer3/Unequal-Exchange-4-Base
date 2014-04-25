@@ -3,6 +3,7 @@ package me.undergroundminer3.uee4.block;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import me.undergroundminer3.uee4.UnequalExchange4;
+import me.undergroundminer3.uee4.abstacts.BlockEE;
 import me.undergroundminer3.uee4.reference.GuiIds;
 import me.undergroundminer3.uee4.reference.Names;
 import me.undergroundminer3.uee4.reference.RenderIds;
@@ -94,6 +95,7 @@ public class BlockAlchemicalChest extends BlockEE implements ITileEntityProvider
 	}
 
 	@Override
+	@SuppressWarnings("all")
 	@SideOnly(Side.CLIENT)
 	public void getSubBlocks(Item item, CreativeTabs creativeTabs, List list)
 	{

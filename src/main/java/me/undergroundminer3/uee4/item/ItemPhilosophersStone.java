@@ -1,18 +1,20 @@
 package me.undergroundminer3.uee4.item;
 
+import me.undergroundminer3.uee4.abstacts.ItemEE;
 import me.undergroundminer3.uee4.reference.Names;
 import net.minecraft.item.ItemStack;
 
 public class ItemPhilosophersStone extends ItemEE
 {
-	private int maxChargeLevel;
+	//TODO implement
+//	private int maxChargeLevel;
 
 	public ItemPhilosophersStone()
 	{
 		super();
 		this.setUnlocalizedName(Names.Items.PHILOSOPHERS_STONE);
 		this.setMaxDamage(1000);
-		this.maxChargeLevel = 3;
+//		this.maxChargeLevel = 3;
 	}
 
 	@Override

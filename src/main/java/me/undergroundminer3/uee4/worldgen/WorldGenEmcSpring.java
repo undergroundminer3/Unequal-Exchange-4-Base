@@ -2,7 +2,7 @@ package me.undergroundminer3.uee4.worldgen;
 
 import java.util.Random;
 
-import me.undergroundminer3.uee4.block.ModBlocks;
+import me.undergroundminer3.uee4.init.ModBlocks;
 import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;

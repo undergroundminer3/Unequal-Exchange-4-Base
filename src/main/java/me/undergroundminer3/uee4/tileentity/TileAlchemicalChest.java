@@ -1,6 +1,7 @@
 package me.undergroundminer3.uee4.tileentity;
 
-import me.undergroundminer3.uee4.block.ModBlocks;
+import me.undergroundminer3.uee4.abstacts.TileEntityEE;
+import me.undergroundminer3.uee4.init.ModBlocks;
 import me.undergroundminer3.uee4.inventory.ContainerAlchemicalChest;
 import me.undergroundminer3.uee4.reference.Names;
 import me.undergroundminer3.uee4.reference.Sounds;
