@@ -23,8 +23,8 @@ item.uee4:alchemicalUpgrade.verdant.name=Verdant Upgrade
 item.uee4:alchemicalUpgrade.azure.name=Azure Upgrade
 item.uee4:alchemicalUpgrade.minium.name=Minium Upgrade
 
-item.uee4:liquidemc=Liquid Emc
-item.uee4:bucketEmc=Bucket of Emc
+item.uee4:liquidemc.name=Liquid Emc
+item.uee4:bucketEmc.name=Bucket of Emc
 
 # Block localizations
 tile.uee4:alchemicalChest.name=Alchemical Chest
@@ -40,6 +40,8 @@ tile.uee4:infusedCloth.name=Infused Cloth
 tile.uee4:infusedWood.name=Infused Wood
 tile.uee4:infusedPlank.name=Infused Wood Planks
 tile.uee4:liquidEmc.name=Liquid EMC
+
+tile.enginePlusUEE4=Engine++
 
 # GUI localizations
 container.uee4:alchemicalBag=Alchemical Bag
@@ -78,3 +80,32 @@ version.uee4:mc_version_not_found=Unable to find a version of %s for %s in the r
 # Tooltip localizations
 tooltip.uee4:infusedPrefix=Infused with
 tooltip.uee4:upgradesPrefix=Upgrades (Alchemical) Chests
+
+# Graphical User Interface (GUI) localizations
+gui.machineHeatTitle=Machine Heat
+gui.machineHeatCurrent=Temperature
+gui.machineHeatIdeal=Ideal Temperature
+
+gui.energyMJTitle=MJ Output
+gui.currentOutputMJ=Energy Output (MJ)
+gui.storedMJ=Stored Energy (MJ)
+gui.maxOutputMJ=Maximum Output (MJ)
+
+gui.informationLedgerTitle=Information
+
+gui.machineOverheatTitle=Explosion Stability
+gui.machineHeatMax=Maximum Temperature
+gui.machineOverheatTime=Time until BOOM!
+
+gui.enginePlus.ledgerPrefix=Engine++
+gui.enginePlus.infoLedger.text1=This advanced engine
+gui.enginePlus.infoLedger.text2=is a generic engine that
+gui.enginePlus.infoLedger.text3=can be upgraded on-
+gui.enginePlus.infoLedger.text4=the-spot. It takes many
+gui.enginePlus.infoLedger.text5="components". Unlike
+gui.enginePlus.infoLedger.text6=other engines, you may
+gui.enginePlus.infoLedger.text7=need multiple blocks to
+gui.enginePlus.infoLedger.text8=generate energy, and
+gui.enginePlus.infoLedger.text9=required more fuel, but
+gui.enginePlus.infoLedger.text10=you get out much more.
+

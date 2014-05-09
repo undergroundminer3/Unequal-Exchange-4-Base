@@ -5,6 +5,7 @@ import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.*;
+import me.undergroundminer3.uee4.init.ModInstance;
 import me.undergroundminer3.uee4.init0.CoreInitHelper;
 import me.undergroundminer3.uee4.proxy.IProxy;
 import me.undergroundminer3.uee4.reference.Reference;
@@ -45,6 +46,7 @@ public final class UnequalExchange4 {
 	@EventHandler
 	public final void preInit(final FMLPreInitializationEvent event)
 	{
+		ModInstance.setMod(instance);
 		CoreInitHelper.initCore(event.getModConfigurationDirectory());
 
 		CoreInitHelper.init0();
@@ -54,7 +56,7 @@ public final class UnequalExchange4 {
 	}
 
 	@EventHandler
-	public final void init(FMLInitializationEvent event)
+	public final void init(final FMLInitializationEvent event)
 	{
 		CoreInitHelper.init2();
 		
@@ -62,7 +64,7 @@ public final class UnequalExchange4 {
 	}
 
 	@EventHandler
-	public final void postInit(FMLPostInitializationEvent event)
+	public final void postInit(final FMLPostInitializationEvent event)
 	{
 		CoreInitHelper.init4();
 		

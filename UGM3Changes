@@ -50,5 +50,15 @@ ALPHA1:
 2014.04.23 I agree, bump up the forge version.
 2014.04.23 Fix the forge version
 
-2014.04.24 Restructure
-2014.04.24 Fixed Emc Machine not emitting mj
+2014.04.25 Restructure
+2014.04.25 Fixed Emc Machine not emitting mj
+
+2014.04.25 Emc1 renamed to EmcAir
+2014.04.25 Moved emc to misc
+
+2014.04.26 Added heat pipes
+2014.05.03 Update buildcraft
+2014.05.03 Merge buildcraft changes
+
+2014.04.09 Fixed heat pipes
+2014.04.09 Engine++

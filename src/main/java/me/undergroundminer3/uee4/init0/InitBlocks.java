@@ -15,6 +15,7 @@ import me.undergroundminer3.uee4.block.BlockLiquidEMC;
 import me.undergroundminer3.uee4.block.BlockResearchStation;
 import me.undergroundminer3.uee4.block.LiquidEMC;
 import me.undergroundminer3.uee4.init2.EmcBlocksInit;
+import me.undergroundminer3.uee4.init2.EnginesInit;
 import me.undergroundminer3.uee4.init2.PipesInit;
 import me.undergroundminer3.uee4.item.ItemBlockAlchemicalChest;
 import me.undergroundminer3.uee4.item.ItemBlockAlchemicalFuel;
@@ -50,6 +51,8 @@ public final class InitBlocks {
 		PipesInit.init0();
 
 		EmcBlocksInit.init0();
+
+		EnginesInit.init0();
 	}
 
 	public static void init1() {
@@ -59,7 +62,7 @@ public final class InitBlocks {
 		//TODO FOR: Ores
 		//TODO AGAINST: Keep things unequal
 		//TODO AGAINST: Nobody else will try to register emc.
-		
+
 		GameRegistry.registerBlock(chalk, "tile." + Names.Items.CHALK);
 		GameRegistry.registerBlock(alchemicalFuel, ItemBlockAlchemicalFuel.class, "tile." + Names.Items.ALCHEMICAL_FUEL);
 		GameRegistry.registerBlock(infusedCloth, ItemBlockInfusedCloth.class, "tile." + Names.Blocks.INFUSED_CLOTH);
@@ -79,5 +82,7 @@ public final class InitBlocks {
 		PipesInit.init1();
 
 		EmcBlocksInit.init1();
+
+		EnginesInit.init1();
 	}
 }

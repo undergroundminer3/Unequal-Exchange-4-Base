@@ -7,10 +7,11 @@ This includes the basic mod files, the blocks and items, and basically everythin
 That part that was copied from Buildcraft is MMPL (Minecraft mod public license)
 This includes the pipes, and the emc energy system,
 and the pipes, and machines and textures that deal with it.
+The part that was copied from CofhLib is LGPL3.
+That includes a few lines in the 
 
 If you have a question, please do not hesitate to contatct UndergroundMiner3.
 
 If you have a solution, know the solution,
 if you can help, you can create an issue,
 or even submit a pull request yourself!
-
